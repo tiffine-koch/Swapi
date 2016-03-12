@@ -9,7 +9,7 @@ app.service('SwapiService', function($http) {
 
   var page = 3;
   var pageNum = "?page=" + page;
-  var url = "http://swapi.co/api/people/"
+  var url = "https://swapi.co/api/people/"
   this.getPeople = function(num) {
     return $http.get(url + pageNum)
 
